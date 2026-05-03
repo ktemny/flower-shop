@@ -125,3 +125,42 @@ function checkout() {
 function sendMessage() {
     alert("Message sent successfully!");
 }
+
+let currentReview = 0;
+const reviews = document.querySelectorAll(".review-box");
+
+function showReview(index){
+    reviews.forEach(r => r.classList.remove("active"));
+    reviews[index].classList.add("active");
+}
+
+function nextReview(){
+    currentReview++;
+    if(currentReview >= reviews.length){
+        currentReview = 0;
+    }
+    showReview(currentReview);
+}
+
+function prevReview(){
+    currentReview--;
+    if(currentReview < 0){
+        currentReview = reviews.length - 1;
+    }
+    showReview(currentReview);
+}
+
+/* AUTO SLIDE */
+let autoSlide = setInterval(nextReview, 3000);
+
+/* PAUSE ON HOVER */
+const reviewSection = document.querySelector(".review-container");
+
+reviewSection.addEventListener("mouseenter", () => {
+    clearInterval(autoSlide);
+});
+
+reviewSection.addEventListener("mouseleave", () => {
+    autoSlide = setInterval(nextReview, 3000);
+});
+

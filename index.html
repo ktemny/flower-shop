@@ -6,20 +6,21 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
 <header>
-
     <div class="menu-icon" onclick="toggleMenu()">
     <i class="fas fa-bars"></i></div>
     <a href="#" class="logo">fleurish<span>.</span></a>
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#about">about</a>
         <a href="#products">products</a>
+        <a href="#reviews">reviews</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -37,31 +38,7 @@
         <p>We Don't just sell flowers. <br>
             We create moments you'll remember.
         </p>
-       <a href="#about" class="btn">Shop Now</a>
-    </div>
-</section>
-
-<section class="about"  id="about">
-    
-    <h1 class="heading"> <span> about </span> us </h1>
-    
-    <div class="row">
-        <div class="picture-container">
-        <img src="images/aboutus.jpg" alt="about us";>
-        <h3>Simple. Fresh. Beautiful</h3>
-        </div>
-
-
-    <div class="content">
-        <h3>Why Choose Fleurish?</h3>
-
-   <p> Fleurish is a space inspired by growth, softness, and becoming. It celebrates the beauty in everyday moments and the quiet confidence that comes from simply unfolding into who you are. <br>
-
-<br> We believe that growth doesn’t have to be loud. It can be gentle, personal, and beautifully imperfect. Like flowers, people flourish in their own time, in their own way.<br>
-
-<br> Fleurish exists to remind you that you’re not rushing against time, you’re blooming with it.</p>
-       <a href="#products" class="btn">Explore our Flowers</a>
-        </div>
+       <a href="#products" class="btn">Shop Now</a>
     </div>
 </section>
 
@@ -168,6 +145,101 @@
         </div>
         </div>
  </section>
+
+ <section class="reviews" id="reviews">
+
+  <h1 class="heading"><span>customer</span> reviews</h1>
+
+  <div class="review-container">
+  <div class="review-box active">
+  <div class="user">
+    <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <h3>Lia M. <span class="review-meta">• Verified</span></h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p>The flowers were fresh and beautifully arranged. My mom really loved it!</p>
+</div>
+
+<div class="review-box">
+  <div class="user">
+    <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <h3>Noah R. <span class="review-meta">• Verified</span></h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p>Very elegant bouquet. Perfect gift choice.</p>
+</div>
+
+<div class="review-box">
+  <div class="user">
+    <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <h3>Ava K. <span class="review-meta">• Verified</span></h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p>Fast delivery and amazing quality. Highly recommended!</p>
+</div>
+
+<div class="review-box">
+  <div class="user">
+    <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <h3>Eli S. <span class="review-meta">• Verified</span></h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p>The bouquet looked exactly like the photos. Very satisfied!</p>
+</div>
+
+<div class="review-box">
+  <div class="user">
+    <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <h3>Ella T. <span class="review-meta">• Verified</span></h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <p>Perfect gift. Very aesthetic and fresh flowers.</p>
+</div>
+  </div>
+  <div class="review-controls">
+    <button onclick="prevReview()">‹</button>
+    <button onclick="nextReview()">›</button>
+  </div>
+
+</section>
 
 <section class="contact" id="contact">
     

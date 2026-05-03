@@ -239,58 +239,6 @@ header .icons a:hover{
     font-size: 3rem;
 }
 
-.about .row{
-    display: flex;
-    align-items: center;
-    gap:2rem;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    padding-bottom:3rem;
-}
-
-.about .row .picture-container{
-    flex: 1 1 40rem;
-    position: relative;
-}
-
-.about .row .picture-container img{
-    width: 100%;
-    border: 1.5rem solid #fff;
-    border-radius: 5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    height:100%;
-    object-fit:cover;
-}
-
-.about .row .picture-container h3{
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-    font-size: 3rem;
-    background: #fff;
-    width: 100%;
-    padding: 1rem 2rem;
-    text-align:center;
-    mix-blend-mode: screen;
-}
-
-.about .row .content{
-    flex:1 1 40rem;
-}
-
-.about .row .content h3{
-    font-size: 3rem;
-    line-height: 2.5;
-    color: #333;
-}
-
-.about .row .content p{
-    font-size: 1.5rem;
-    color: #999;
-    padding: 4rem 0;
-    padding-top: 1rem;
-    line-height: 1.5;
-}
-
 .products{
     padding: 2rem 5%;
 }
@@ -391,6 +339,129 @@ header .icons a:hover{
     font-weight: lighter;
     text-decoration: line-through;
 }
+
+/* container */
+
+.reviews{
+    padding: 6rem 9%;
+    background: linear-gradient(135deg, #fff7fb, #ffeef6);
+}
+
+/* container */
+.review-container{
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CARD (light glass style, NO blur = no lag) */
+.review-box{
+    display: none;
+    padding: 4rem;
+    border-radius: 2.5rem;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 182, 193, 0.25);
+
+    box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* active review */
+.review-box.active{
+    display: block;
+    animation: fadeIn 0.35s ease;
+}
+
+/* user section */
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+/* avatar */
+.user i{
+    font-size: 4.5rem;
+    color: var(--pink);
+    opacity: 0.9;
+}
+
+/* name */
+.user h3{
+    font-size: 1.9rem;
+    color: #333;
+}
+
+/* rating */
+.user span{
+    font-size: 1.5rem;
+    color: var(--pink);
+}
+
+/* text */
+.review-box p{
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* buttons */
+.review-controls{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.review-controls button{
+    background: var(--pink);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: .8rem 1.4rem;
+    margin: 0 .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-controls button:hover{
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* simple fade animation (FAST) */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review-meta {
+    font-size: 1.2rem;
+    color: #999;
+    font-weight: normal;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 1px; 
+    margin-top: 0.3rem;
+}
+
+.stars i {
+    color: #e84393;
+    font-size: 1.4rem;
+}
+
+/*contact*/
 
 .contact .row{
     display:flex;
